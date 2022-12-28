@@ -101,3 +101,5 @@ Swift allows renaming the inbuilt types. This new name could be used to referenc
 typealias char = Character
 var a: char = "A"
 ```
+
+[Previous](0-Swift.md) | [Next](2-StringAndChars.md)
