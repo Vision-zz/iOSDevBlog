@@ -30,7 +30,6 @@ Swift is a programming language used to create applications for all the Apple de
 	print(car1.name) // Benz
 	print(car2.name) // Benz
 	```
-	Here `car2`
 
 ## Data Types
 
@@ -67,13 +66,13 @@ Integers can also be explicitly declared with different forms.
 	- **Int32** - `-2147483648` to `2147483647`
 	- **Int64** - `-9223372036854775808` to `9223372036854775807`
 
-- ##### Unsigned Integer
+- #### Unsigned Integer
 
 	- **UInt8** - `0` to `255`
 	- **UInt16** - `0` to `65535`
 	- **UInt32** - `0` to `4294967295`
 	- **UInt64** - `0` to `18446744073709551615`
-	
+
 ## Type Safety
 
 Swift is a type safe language which means a variable declared and initialized with one type cannot be reinitialized to another type.
