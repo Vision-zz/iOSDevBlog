@@ -1,0 +1,8 @@
+- Why value type and reference type
+- Why class is specifically reference type + memory handling
+- Mutability with `let` in structs and class variables / functions
+- Structural types vs Nominal types
+- Why unicode
+- Unicode vs ASCII
+- String interpolation vs appending
+- Optionals and ENUM implementation
