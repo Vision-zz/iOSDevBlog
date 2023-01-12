@@ -98,3 +98,22 @@ s.setName(name: "NewName")
 print(s.getName()) // NewName
 ```
  
+## Static Properties and Methods
+
+Static properties and methods are available in Swift just like in other languages. They are available at type level and does not map to any particular instance of that type. Which means static members can only be accessed from the type and not from the instance of that type.
+
+```swift
+struct Rectangle {
+	var length: Int;
+	var breadth: Int;
+	static let sides: Int = 4
+}
+
+var r1 = Rectangle(length: 10, breadth: 15)
+var r2 = Rectangle(length: 7, breadth: 12)
+
+print(r1.length) // 10
+print(r2.length) // 7
+print(Rectangle.sides) // 4
+print(r1.sides) //error: static member 'sides' cannot be used on instance of type 'Rectangle'
+```
