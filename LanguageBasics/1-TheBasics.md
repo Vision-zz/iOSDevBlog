@@ -14,6 +14,7 @@ Swift is a programming language used to create applications for all the Apple de
 	print(tuple1) // ("tuple", "ONE")
 	print(tuple2) // ("tuple", "TWO")
 	```
+	
 	Here `tuple2` is a new copy of `tuple1` and changing the values of `tuple2` does not affect `tuple1`
 
 - #### Reference Types
@@ -101,4 +102,4 @@ typealias char = Character
 var a: char = "A"
 ```
 
-[Previous](0-Swift.md) | [Next](2-StringAndChars.md)
+[Next](2-StringAndChars.md)

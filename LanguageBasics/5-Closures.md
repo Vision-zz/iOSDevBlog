@@ -22,7 +22,7 @@ print(sortedArr) // [4, 5, 9, 10, 12, 19, 27, 33]
 
 ## Shorthand Arguments
 
-Swift provides short hand arguments to use with closures by the names `$0`, `$1` ... `$n-1` where `n` is the number of arguments. Using this syntax, the `in` keyword in the synta can be avoided.
+Swift provides short hand arguments to use with closures by `$0`, `$1` ... `$n-1` where `n` is the number of arguments. Using this syntax, the `in` keyword in the synta can be avoided.
 
 ```swift
 var arr = [10, 5, 19, 4, 27, 9, 33, 12]
@@ -38,4 +38,25 @@ Swift allows us to write closure espressions after the function call's paranthes
 var arr = [10, 5, 19, 4, 27, 9, 33, 12]
 var sortedArr = arr.sorted() { $0 < $1 }
 print(sortedArr) // [4, 5, 9, 10, 12, 19, 27, 33]
+```
+
+If there are more than one closure expressions, we can omit the argument label for the first trailing closure, and the remaining closures need to be labelled
+
+```swift
+func test(doFirst: () -> Void, then:() -> Void) {
+    doFirst()
+    then()
+}
+    
+test() {
+    print("Hello")
+} then: {
+    print("World")
+}
+```
+
+**Output**
+```
+Hello
+World
 ```
